@@ -71,19 +71,19 @@ public class HelloController {
     public static String createMessage(@RequestParam String name, @RequestParam String language){
         String message = "Hello";
         if(language.equals("French")) {
-            message = "Bonjour ";
+            message = "<i>Bonjour </i>";
         }
         if(language.equals("English ")){
-            message = "Hello ";
+            message = "<i>Hello </i>";
         }
         if(language.equals("Spanish")){
-            message = "Hola ";
+            message = "<i>Hola </i>";
         }
         if(language.equals("Italian")){
-            message = "Ciao ";
+            message = "<i>Ciao </i>";
         }
         if(language.equals("Flemish")){
-            message = "Hallo ";
+            message = "<i>Hallo </i>";
         }
         return message + name + "!";
     }
